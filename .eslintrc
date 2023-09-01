@@ -1,0 +1,21 @@
+{
+  "extends": ["@nuxtjs/eslint-config-typescript"],
+  "overrides": [
+    {
+      "files": ["./server/**/*.ts", "./**/*.ts", "./**/*.js", "./**/*.vue"],
+      "rules": {
+        "no-console": [
+          "error",
+          { "allow": ["info", "warn", "trace", "error"] }
+        ],
+        "comma-dangle": "off",
+        "quotes": "off",
+        "vue/html-indent": "off",
+        "vue/max-attributes-per-line": "off",
+        "vue/first-attribute-linebreak": "off",
+        "vue/no-multi-spaces": "off",
+        "vue/html-closing-bracket-newline": "off"
+      }
+    }
+  ]
+}
